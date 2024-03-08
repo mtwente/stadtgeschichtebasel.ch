@@ -7,7 +7,7 @@
 	import * as config from '$lib/config';
 </script>
 
-<Head title="Seite nicht gefunden" />
+<Head title="Seite nicht gefunden – {config.title}" />
 
 <svelte:head>
 	<script>

@@ -3,6 +3,7 @@
 	import Head from '$lib/components/Head.svelte';
 	import Post from '$lib/components/Post.svelte';
 	import PostNav from '$lib/components/PostNav.svelte';
+	import * as config from '$lib/config';
 
 	/** @type {import('./$types').PageData} */
 	export let data;
@@ -37,7 +38,7 @@
 	$: paginatedPosts = data.posts.slice(start, end);
 </script>
 
-<Head title="Blog | Spannendes aus der Basler Geschichte" />
+<Head title="Blog – {config.title}" />
 
 <Container>
 	<h1>Blog</h1>

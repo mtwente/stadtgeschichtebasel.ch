@@ -2,9 +2,10 @@
 	import Container from '$lib/components/Container.svelte';
 	import Head from '$lib/components/Head.svelte';
 	import data from '$lib/data/datastories.json';
+	import * as config from '$lib/config';
 </script>
 
-<Head title="Data Stories | Hier finden Sie alle Data Stories" jsonLdDataType="Article" />
+<Head title="Data Stories – {config.title}" jsonLdDataType="Article" />
 
 <Container>
 	<h1>Data Stories</h1>

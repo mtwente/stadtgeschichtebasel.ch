@@ -69,7 +69,7 @@
 	}
 </script>
 
-<Head title="Partner | Alle Kooperationspartner*innen von {config.title}" />
+<Head title="Partner – {config.title}" />
 
 <section class="h-screen w-full">
 	<MapLibre
