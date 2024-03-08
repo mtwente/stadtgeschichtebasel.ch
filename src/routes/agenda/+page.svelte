@@ -185,9 +185,9 @@
 					<hgroup class="m-0">
 						<h3>{event.title} ({event.owner})</h3>
 						<h4>
-							📅 <time datetime={event.localizedEndDate}>{event.localizedStartDate}</time>
+							<span aria-hidden="true">📅 </span><time datetime={event.localizedEndDate}>{event.localizedStartDate}</time>
 							{#if event.startTime}
-								🕒 <time>{event.startTime}</time>
+							<span aria-hidden="true">🕒 </span><time>{event.startTime}</time>
 								{#if event.endTime}– <time>{event.endTime}</time>{/if}
 							{/if}
 						</h4>
