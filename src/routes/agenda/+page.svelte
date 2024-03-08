@@ -136,9 +136,7 @@
 	let agenda = 'events';
 </script>
 
-<Head
-	title="Agenda – {config.title}"
-/>
+<Head title="Agenda – {config.title}" />
 
 <Container>
 	<h1>Agenda</h1>
@@ -159,7 +157,9 @@
 		<RadioItem bind:group={agenda} name="justify" value={'exhibitions'}
 			>Dauer&shy;aus&shy;stellungen ({exhibitions.length})</RadioItem
 		>
-		<RadioItem bind:group={agenda} name="justify" value={'info'}><span aria-label="Information">ⓘ</span></RadioItem>
+		<RadioItem bind:group={agenda} name="justify" value={'info'}
+			><span aria-label="Information">ⓘ</span></RadioItem
+		>
 	</RadioGroup>
 	{#if agenda === 'events'}
 		<RadioGroup
@@ -185,9 +185,11 @@
 					<hgroup class="m-0">
 						<h3>{event.title} ({event.owner})</h3>
 						<h4>
-							<span aria-hidden="true">📅 </span><time datetime={event.localizedEndDate}>{event.localizedStartDate}</time>
+							<span aria-hidden="true">📅 </span><time datetime={event.localizedEndDate}
+								>{event.localizedStartDate}</time
+							>
 							{#if event.startTime}
-							<span aria-hidden="true">🕒 </span><time>{event.startTime}</time>
+								<span aria-hidden="true">🕒 </span><time>{event.startTime}</time>
 								{#if event.endTime}– <time>{event.endTime}</time>{/if}
 							{/if}
 						</h4>
