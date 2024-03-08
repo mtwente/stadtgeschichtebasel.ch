@@ -159,7 +159,7 @@
 		<RadioItem bind:group={agenda} name="justify" value={'exhibitions'}
 			>Dauer&shy;aus&shy;stellungen ({exhibitions.length})</RadioItem
 		>
-		<RadioItem bind:group={agenda} name="justify" value={'info'}>ⓘ</RadioItem>
+		<RadioItem bind:group={agenda} name="justify" value={'info'}><span aria-label="Information">ⓘ</span></RadioItem>
 	</RadioGroup>
 	{#if agenda === 'events'}
 		<RadioGroup
